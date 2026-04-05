@@ -1,0 +1,562 @@
+[
+  {
+    "id": "FAC001",
+    "name": "Industrial Corp 1 Surat",
+    "lat": 21.20951827858297,
+    "lon": 72.82300582701879,
+    "city": "Surat",
+    "pincode": "395003",
+    "category": "Manufacturing",
+    "waste_out": [
+      "WT011",
+      "WT025",
+      "WT040"
+    ],
+    "waste_in": [
+      "acid",
+      "solvent"
+    ]
+  },
+  {
+    "id": "FAC002",
+    "name": "Industrial Corp 2 Chennai",
+    "lat": 13.131484386463136,
+    "lon": 80.27418631379194,
+    "city": "Chennai",
+    "pincode": "600001",
+    "category": "Manufacturing",
+    "waste_out": [
+      "WT006",
+      "WT008",
+      "WT047"
+    ],
+    "waste_in": [
+      "sludge",
+      "aluminium"
+    ]
+  },
+  {
+    "id": "FAC003",
+    "name": "Industrial Corp 3 Delhi",
+    "lat": 28.694321389325825,
+    "lon": 77.11371083517842,
+    "city": "Delhi",
+    "pincode": "110001",
+    "category": "Manufacturing",
+    "waste_out": [
+      "WT049",
+      "WT031"
+    ],
+    "waste_in": [
+      "sludge",
+      "gypsum",
+      "solvent"
+    ]
+  },
+  {
+    "id": "FAC004",
+    "name": "Industrial Corp 4 Chennai",
+    "lat": 13.111329308110399,
+    "lon": 80.28841691234655,
+    "city": "Chennai",
+    "pincode": "600001",
+    "category": "Manufacturing",
+    "waste_out": [
+      "WT020",
+      "WT024"
+    ],
+    "waste_in": [
+      "acid",
+      "ceramic"
+    ]
+  },
+  {
+    "id": "FAC005",
+    "name": "Industrial Corp 5 Coimbatore",
+    "lat": 11.036668948970423,
+    "lon": 76.99824572931843,
+    "city": "Coimbatore",
+    "pincode": "641001",
+    "category": "Manufacturing",
+    "waste_out": [
+      "WT018",
+      "WT040",
+      "WT041"
+    ],
+    "waste_in": [
+      "ash",
+      "acid"
+    ]
+  },
+  {
+    "id": "FAC006",
+    "name": "Industrial Corp 6 Delhi",
+    "lat": 28.741413991761974,
+    "lon": 77.06425160704671,
+    "city": "Delhi",
+    "pincode": "110001",
+    "category": "Manufacturing",
+    "waste_out": [
+      "WT050",
+      "WT006",
+      "WT013"
+    ],
+    "waste_in": [
+      "textile",
+      "paper",
+      "sludge",
+      "solvent"
+    ]
+  },
+  {
+    "id": "FAC007",
+    "name": "Industrial Corp 7 Mumbai",
+    "lat": 19.05252334356196,
+    "lon": 72.85465842760549,
+    "city": "Mumbai",
+    "pincode": "400001",
+    "category": "Manufacturing",
+    "waste_out": [
+      "WT004",
+      "WT042",
+      "WT008"
+    ],
+    "waste_in": [
+      "ash",
+      "oil",
+      "plastic"
+    ]
+  },
+  {
+    "id": "FAC008",
+    "name": "Industrial Corp 8 Surat",
+    "lat": 21.124523624832527,
+    "lon": 72.78539395845912,
+    "city": "Surat",
+    "pincode": "395003",
+    "category": "Manufacturing",
+    "waste_out": [
+      "WT033",
+      "WT025",
+      "WT039"
+    ],
+    "waste_in": [
+      "aluminium",
+      "organic",
+      "paper"
+    ]
+  },
+  {
+    "id": "FAC009",
+    "name": "Industrial Corp 9 Nagpur",
+    "lat": 21.151199188324444,
+    "lon": 79.11933591487414,
+    "city": "Nagpur",
+    "pincode": "440001",
+    "category": "Manufacturing",
+    "waste_out": [
+      "WT032",
+      "WT038"
+    ],
+    "waste_in": [
+      "steel",
+      "organic",
+      "acid"
+    ]
+  },
+  {
+    "id": "FAC010",
+    "name": "Industrial Corp 10 Chennai",
+    "lat": 13.091028552611503,
+    "lon": 80.25222921862881,
+    "city": "Chennai",
+    "pincode": "600001",
+    "category": "Manufacturing",
+    "waste_out": [
+      "WT021",
+      "WT038",
+      "WT004",
+      "WT048"
+    ],
+    "waste_in": [
+      "slag",
+      "plastic"
+    ]
+  },
+  {
+    "id": "FAC011",
+    "name": "Industrial Corp 11 Surat",
+    "lat": 21.12584177357631,
+    "lon": 72.82803692325669,
+    "city": "Surat",
+    "pincode": "395003",
+    "category": "Manufacturing",
+    "waste_out": [
+      "WT046",
+      "WT036",
+      "WT004"
+    ],
+    "waste_in": [
+      "electronic",
+      "acid"
+    ]
+  },
+  {
+    "id": "FAC012",
+    "name": "Industrial Corp 12 Coimbatore",
+    "lat": 11.033528783803288,
+    "lon": 76.96770788428354,
+    "city": "Coimbatore",
+    "pincode": "641001",
+    "category": "Manufacturing",
+    "waste_out": [
+      "WT017",
+      "WT040"
+    ],
+    "waste_in": [
+      "solvent",
+      "sludge",
+      "wood"
+    ]
+  },
+  {
+    "id": "FAC013",
+    "name": "Industrial Corp 13 Vadodara",
+    "lat": 22.34937016750063,
+    "lon": 73.20047036721023,
+    "city": "Vadodara",
+    "pincode": "390001",
+    "category": "Manufacturing",
+    "waste_out": [
+      "WT021",
+      "WT028",
+      "WT035"
+    ],
+    "waste_in": [
+      "ash",
+      "gypsum"
+    ]
+  },
+  {
+    "id": "FAC014",
+    "name": "Industrial Corp 14 Ahmedabad",
+    "lat": 22.994604459457392,
+    "lon": 72.53162798159015,
+    "city": "Ahmedabad",
+    "pincode": "380001",
+    "category": "Manufacturing",
+    "waste_out": [
+      "WT021",
+      "WT042"
+    ],
+    "waste_in": [
+      "paper",
+      "rubber",
+      "organic"
+    ]
+  },
+  {
+    "id": "FAC015",
+    "name": "Industrial Corp 15 Mumbai",
+    "lat": 19.03783106391964,
+    "lon": 72.8842526047959,
+    "city": "Mumbai",
+    "pincode": "400001",
+    "category": "Manufacturing",
+    "waste_out": [
+      "WT046",
+      "WT017",
+      "WT003"
+    ],
+    "waste_in": [
+      "textile",
+      "organic"
+    ]
+  },
+  {
+    "id": "FAC016",
+    "name": "Industrial Corp 16 Mumbai",
+    "lat": 19.093766108485376,
+    "lon": 72.86136288150907,
+    "city": "Mumbai",
+    "pincode": "400001",
+    "category": "Manufacturing",
+    "waste_out": [
+      "WT019",
+      "WT015",
+      "WT046"
+    ],
+    "waste_in": [
+      "sludge",
+      "ceramic",
+      "oil"
+    ]
+  },
+  {
+    "id": "FAC017",
+    "name": "Industrial Corp 17 Ludhiana",
+    "lat": 30.938901284068383,
+    "lon": 75.86245713975693,
+    "city": "Ludhiana",
+    "pincode": "141001",
+    "category": "Manufacturing",
+    "waste_out": [
+      "WT034",
+      "WT002"
+    ],
+    "waste_in": [
+      "sludge",
+      "paper",
+      "oil"
+    ]
+  },
+  {
+    "id": "FAC018",
+    "name": "Industrial Corp 18 Mumbai",
+    "lat": 19.10579960208696,
+    "lon": 72.85613399474981,
+    "city": "Mumbai",
+    "pincode": "400001",
+    "category": "Manufacturing",
+    "waste_out": [
+      "WT033",
+      "WT007"
+    ],
+    "waste_in": [
+      "lead",
+      "oil",
+      "gypsum",
+      "organic"
+    ]
+  },
+  {
+    "id": "FAC019",
+    "name": "Industrial Corp 19 Nagpur",
+    "lat": 21.10689290817296,
+    "lon": 79.06392975080216,
+    "city": "Nagpur",
+    "pincode": "440001",
+    "category": "Manufacturing",
+    "waste_out": [
+      "WT023",
+      "WT005",
+      "WT026",
+      "WT024"
+    ],
+    "waste_in": [
+      "sludge",
+      "acid",
+      "plastic"
+    ]
+  },
+  {
+    "id": "FAC020",
+    "name": "Industrial Corp 20 Ludhiana",
+    "lat": 30.87532608566912,
+    "lon": 75.86910022894499,
+    "city": "Ludhiana",
+    "pincode": "141001",
+    "category": "Manufacturing",
+    "waste_out": [
+      "WT013",
+      "WT011",
+      "WT022"
+    ],
+    "waste_in": [
+      "aluminium",
+      "sludge"
+    ]
+  },
+  {
+    "id": "FAC021",
+    "name": "Industrial Corp 21 Mumbai",
+    "lat": 19.109138824074236,
+    "lon": 72.87238937508391,
+    "city": "Mumbai",
+    "pincode": "400001",
+    "category": "Manufacturing",
+    "waste_out": [
+      "WT048",
+      "WT005",
+      "WT020",
+      "WT042"
+    ],
+    "waste_in": [
+      "aluminium",
+      "electronic"
+    ]
+  },
+  {
+    "id": "FAC022",
+    "name": "Industrial Corp 22 Chennai",
+    "lat": 13.052428235907238,
+    "lon": 80.23907368435108,
+    "city": "Chennai",
+    "pincode": "600001",
+    "category": "Manufacturing",
+    "waste_out": [
+      "WT014",
+      "WT015",
+      "WT043",
+      "WT037"
+    ],
+    "waste_in": [
+      "aluminium",
+      "ash",
+      "steel"
+    ]
+  },
+  {
+    "id": "FAC023",
+    "name": "Industrial Corp 23 Mumbai",
+    "lat": 19.102810530307888,
+    "lon": 72.88929171747446,
+    "city": "Mumbai",
+    "pincode": "400001",
+    "category": "Manufacturing",
+    "waste_out": [
+      "WT011",
+      "WT027",
+      "WT021",
+      "WT043"
+    ],
+    "waste_in": [
+      "plastic",
+      "ash",
+      "wood",
+      "acid"
+    ]
+  },
+  {
+    "id": "FAC024",
+    "name": "Industrial Corp 24 Mumbai",
+    "lat": 19.050375973366855,
+    "lon": 72.90913384712931,
+    "city": "Mumbai",
+    "pincode": "400001",
+    "category": "Manufacturing",
+    "waste_out": [
+      "WT024",
+      "WT008",
+      "WT035",
+      "WT014"
+    ],
+    "waste_in": [
+      "wood",
+      "aluminium"
+    ]
+  },
+  {
+    "id": "FAC025",
+    "name": "Industrial Corp 25 Ahmedabad",
+    "lat": 23.034682625314076,
+    "lon": 72.60973160462895,
+    "city": "Ahmedabad",
+    "pincode": "380001",
+    "category": "Manufacturing",
+    "waste_out": [
+      "WT040",
+      "WT034",
+      "WT007",
+      "WT042"
+    ],
+    "waste_in": [
+      "wood",
+      "oil",
+      "lead"
+    ]
+  },
+  {
+    "id": "FAC026",
+    "name": "Industrial Corp 26 Delhi",
+    "lat": 28.658601048548878,
+    "lon": 77.1514845755158,
+    "city": "Delhi",
+    "pincode": "110001",
+    "category": "Manufacturing",
+    "waste_out": [
+      "WT016",
+      "WT033",
+      "WT010",
+      "WT041"
+    ],
+    "waste_in": [
+      "sludge",
+      "solvent"
+    ]
+  },
+  {
+    "id": "FAC027",
+    "name": "Industrial Corp 27 Delhi",
+    "lat": 28.753810967651674,
+    "lon": 77.07022846261506,
+    "city": "Delhi",
+    "pincode": "110001",
+    "category": "Manufacturing",
+    "waste_out": [
+      "WT021",
+      "WT007",
+      "WT023"
+    ],
+    "waste_in": [
+      "plastic",
+      "gypsum",
+      "solvent",
+      "oil"
+    ]
+  },
+  {
+    "id": "FAC028",
+    "name": "Industrial Corp 28 Delhi",
+    "lat": 28.660912115035156,
+    "lon": 77.12724319085252,
+    "city": "Delhi",
+    "pincode": "110001",
+    "category": "Manufacturing",
+    "waste_out": [
+      "WT009",
+      "WT013"
+    ],
+    "waste_in": [
+      "electronic",
+      "solvent"
+    ]
+  },
+  {
+    "id": "FAC029",
+    "name": "Industrial Corp 29 Ludhiana",
+    "lat": 30.9105053657509,
+    "lon": 75.87515029644591,
+    "city": "Ludhiana",
+    "pincode": "141001",
+    "category": "Manufacturing",
+    "waste_out": [
+      "WT014",
+      "WT033",
+      "WT038"
+    ],
+    "waste_in": [
+      "steel",
+      "textile",
+      "sludge"
+    ]
+  },
+  {
+    "id": "FAC030",
+    "name": "Industrial Corp 30 Surat",
+    "lat": 21.15666971128473,
+    "lon": 72.86919606630724,
+    "city": "Surat",
+    "pincode": "395003",
+    "category": "Manufacturing",
+    "waste_out": [
+      "WT037",
+      "WT033",
+      "WT020"
+    ],
+    "waste_in": [
+      "iron",
+      "gypsum"
+    ]
+  }
+]

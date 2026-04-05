@@ -1,0 +1,1185 @@
+[
+  {
+    "id": "WT001",
+    "name": "Spent Solvent",
+    "tags": [
+      "solvent",
+      "chemical",
+      "liquid",
+      "flammable",
+      "variant_1"
+    ],
+    "hazard_class": 1,
+    "unit": "litres",
+    "typical_volume": 2657,
+    "compatible_with": [
+      "WT032",
+      "WT024",
+      "WT048"
+    ],
+    "incompatible_with": [
+      "WT037",
+      "WT042"
+    ],
+    "base_price_per_unit": 39
+  },
+  {
+    "id": "WT002",
+    "name": "Fly Ash",
+    "tags": [
+      "ash",
+      "solid",
+      "particulate",
+      "construction",
+      "variant_1"
+    ],
+    "hazard_class": 3,
+    "unit": "kg",
+    "typical_volume": 467,
+    "compatible_with": [
+      "WT007",
+      "WT039",
+      "WT043"
+    ],
+    "incompatible_with": [
+      "WT006",
+      "WT003"
+    ],
+    "base_price_per_unit": 24
+  },
+  {
+    "id": "WT003",
+    "name": "Copper Slag",
+    "tags": [
+      "slag",
+      "metal",
+      "solid",
+      "abrasive",
+      "variant_1"
+    ],
+    "hazard_class": 2,
+    "unit": "kg",
+    "typical_volume": 4628,
+    "compatible_with": [
+      "WT050",
+      "WT001",
+      "WT033"
+    ],
+    "incompatible_with": [
+      "WT022",
+      "WT012"
+    ],
+    "base_price_per_unit": 102
+  },
+  {
+    "id": "WT004",
+    "name": "Acid Effluent",
+    "tags": [
+      "acid",
+      "liquid",
+      "corrosive",
+      "effluent",
+      "variant_1"
+    ],
+    "hazard_class": 1,
+    "unit": "litres",
+    "typical_volume": 2466,
+    "compatible_with": [
+      "WT024",
+      "WT011",
+      "WT025"
+    ],
+    "incompatible_with": [
+      "WT013",
+      "WT019"
+    ],
+    "base_price_per_unit": 83
+  },
+  {
+    "id": "WT005",
+    "name": "Bagasse",
+    "tags": [
+      "organic",
+      "biomass",
+      "solid",
+      "agriculture",
+      "variant_1"
+    ],
+    "hazard_class": 1,
+    "unit": "kg",
+    "typical_volume": 5329,
+    "compatible_with": [
+      "WT034",
+      "WT020",
+      "WT035"
+    ],
+    "incompatible_with": [
+      "WT021",
+      "WT028"
+    ],
+    "base_price_per_unit": 27
+  },
+  {
+    "id": "WT006",
+    "name": "Plastic Granules",
+    "tags": [
+      "plastic",
+      "polymer",
+      "solid",
+      "recyclable",
+      "variant_1"
+    ],
+    "hazard_class": 2,
+    "unit": "kg",
+    "typical_volume": 2996,
+    "compatible_with": [
+      "WT022",
+      "WT024",
+      "WT042"
+    ],
+    "incompatible_with": [
+      "WT031",
+      "WT034"
+    ],
+    "base_price_per_unit": 80
+  },
+  {
+    "id": "WT007",
+    "name": "Aluminium Dross",
+    "tags": [
+      "aluminium",
+      "metal",
+      "dross",
+      "solid",
+      "variant_1"
+    ],
+    "hazard_class": 3,
+    "unit": "kg",
+    "typical_volume": 1461,
+    "compatible_with": [
+      "WT046",
+      "WT013",
+      "WT049"
+    ],
+    "incompatible_with": [
+      "WT003"
+    ],
+    "base_price_per_unit": 94
+  },
+  {
+    "id": "WT008",
+    "name": "Cotton Waste",
+    "tags": [
+      "textile",
+      "organic",
+      "solid",
+      "combustible",
+      "variant_1"
+    ],
+    "hazard_class": 4,
+    "unit": "kg",
+    "typical_volume": 6064,
+    "compatible_with": [
+      "WT026",
+      "WT049",
+      "WT020"
+    ],
+    "incompatible_with": [
+      "WT024",
+      "WT033"
+    ],
+    "base_price_per_unit": 80
+  },
+  {
+    "id": "WT009",
+    "name": "Chemical Sludge",
+    "tags": [
+      "sludge",
+      "chemical",
+      "semi-solid",
+      "toxic",
+      "variant_1"
+    ],
+    "hazard_class": 2,
+    "unit": "kg",
+    "typical_volume": 7924,
+    "compatible_with": [
+      "WT017",
+      "WT013",
+      "WT038"
+    ],
+    "incompatible_with": [
+      "WT026",
+      "WT042"
+    ],
+    "base_price_per_unit": 55
+  },
+  {
+    "id": "WT010",
+    "name": "Waste Oil",
+    "tags": [
+      "oil",
+      "liquid",
+      "hydrocarbon",
+      "lubricant",
+      "variant_1"
+    ],
+    "hazard_class": 1,
+    "unit": "litres",
+    "typical_volume": 8282,
+    "compatible_with": [
+      "WT013",
+      "WT003",
+      "WT044"
+    ],
+    "incompatible_with": [
+      "WT045",
+      "WT032"
+    ],
+    "base_price_per_unit": 79
+  },
+  {
+    "id": "WT011",
+    "name": "Iron Scrap",
+    "tags": [
+      "iron",
+      "metal",
+      "solid",
+      "scrap",
+      "variant_1"
+    ],
+    "hazard_class": 1,
+    "unit": "kg",
+    "typical_volume": 6025,
+    "compatible_with": [
+      "WT014",
+      "WT006",
+      "WT002"
+    ],
+    "incompatible_with": [
+      "WT047"
+    ],
+    "base_price_per_unit": 20
+  },
+  {
+    "id": "WT012",
+    "name": "Glass Cullet",
+    "tags": [
+      "glass",
+      "solid",
+      "silica",
+      "recyclable",
+      "variant_1"
+    ],
+    "hazard_class": 4,
+    "unit": "kg",
+    "typical_volume": 4728,
+    "compatible_with": [
+      "WT047",
+      "WT042",
+      "WT030"
+    ],
+    "incompatible_with": [
+      "WT034"
+    ],
+    "base_price_per_unit": 47
+  },
+  {
+    "id": "WT013",
+    "name": "Paper Sludge",
+    "tags": [
+      "paper",
+      "sludge",
+      "organic",
+      "semi-solid",
+      "variant_1"
+    ],
+    "hazard_class": 1,
+    "unit": "kg",
+    "typical_volume": 453,
+    "compatible_with": [
+      "WT029",
+      "WT011",
+      "WT025"
+    ],
+    "incompatible_with": [
+      "WT012",
+      "WT017"
+    ],
+    "base_price_per_unit": 52
+  },
+  {
+    "id": "WT014",
+    "name": "Rubber Crumb",
+    "tags": [
+      "rubber",
+      "solid",
+      "polymer",
+      "tyre",
+      "variant_1"
+    ],
+    "hazard_class": 1,
+    "unit": "kg",
+    "typical_volume": 5775,
+    "compatible_with": [
+      "WT019",
+      "WT032",
+      "WT022"
+    ],
+    "incompatible_with": [
+      "WT021",
+      "WT028"
+    ],
+    "base_price_per_unit": 101
+  },
+  {
+    "id": "WT015",
+    "name": "Wood Chips",
+    "tags": [
+      "wood",
+      "organic",
+      "solid",
+      "biomass",
+      "variant_1"
+    ],
+    "hazard_class": 1,
+    "unit": "kg",
+    "typical_volume": 5295,
+    "compatible_with": [
+      "WT009",
+      "WT008",
+      "WT038"
+    ],
+    "incompatible_with": [
+      "WT019",
+      "WT026"
+    ],
+    "base_price_per_unit": 28
+  },
+  {
+    "id": "WT016",
+    "name": "Steel Turnings",
+    "tags": [
+      "steel",
+      "metal",
+      "solid",
+      "scrap",
+      "variant_1"
+    ],
+    "hazard_class": 3,
+    "unit": "kg",
+    "typical_volume": 4953,
+    "compatible_with": [
+      "WT047",
+      "WT028",
+      "WT035"
+    ],
+    "incompatible_with": [
+      "WT003"
+    ],
+    "base_price_per_unit": 80
+  },
+  {
+    "id": "WT017",
+    "name": "Battery Waste",
+    "tags": [
+      "lead",
+      "acid",
+      "toxic",
+      "solid",
+      "variant_1"
+    ],
+    "hazard_class": 3,
+    "unit": "kg",
+    "typical_volume": 2450,
+    "compatible_with": [
+      "WT041",
+      "WT007",
+      "WT031"
+    ],
+    "incompatible_with": [
+      "WT010",
+      "WT024"
+    ],
+    "base_price_per_unit": 47
+  },
+  {
+    "id": "WT018",
+    "name": "E-Waste",
+    "tags": [
+      "electronic",
+      "metal",
+      "plastic",
+      "solid",
+      "variant_1"
+    ],
+    "hazard_class": 3,
+    "unit": "kg",
+    "typical_volume": 3540,
+    "compatible_with": [
+      "WT003",
+      "WT032",
+      "WT044"
+    ],
+    "incompatible_with": [
+      "WT022",
+      "WT048"
+    ],
+    "base_price_per_unit": 58
+  },
+  {
+    "id": "WT019",
+    "name": "Phosphogypsum",
+    "tags": [
+      "gypsum",
+      "chemical",
+      "solid",
+      "acidic",
+      "variant_1"
+    ],
+    "hazard_class": 4,
+    "unit": "kg",
+    "typical_volume": 8324,
+    "compatible_with": [
+      "WT010",
+      "WT037",
+      "WT034"
+    ],
+    "incompatible_with": [
+      "WT007",
+      "WT028"
+    ],
+    "base_price_per_unit": 7
+  },
+  {
+    "id": "WT020",
+    "name": "Ceramic Waste",
+    "tags": [
+      "ceramic",
+      "solid",
+      "inert",
+      "construction",
+      "variant_1"
+    ],
+    "hazard_class": 3,
+    "unit": "kg",
+    "typical_volume": 2672,
+    "compatible_with": [
+      "WT030",
+      "WT034",
+      "WT006"
+    ],
+    "incompatible_with": [
+      "WT010",
+      "WT018"
+    ],
+    "base_price_per_unit": 73
+  },
+  {
+    "id": "WT021",
+    "name": "Spent Solvent Type 2",
+    "tags": [
+      "solvent",
+      "chemical",
+      "liquid",
+      "flammable",
+      "variant_2"
+    ],
+    "hazard_class": 1,
+    "unit": "litres",
+    "typical_volume": 686,
+    "compatible_with": [
+      "WT038",
+      "WT031",
+      "WT043"
+    ],
+    "incompatible_with": [
+      "WT006",
+      "WT049"
+    ],
+    "base_price_per_unit": 54
+  },
+  {
+    "id": "WT022",
+    "name": "Fly Ash Type 2",
+    "tags": [
+      "ash",
+      "solid",
+      "particulate",
+      "construction",
+      "variant_2"
+    ],
+    "hazard_class": 3,
+    "unit": "kg",
+    "typical_volume": 1356,
+    "compatible_with": [
+      "WT042",
+      "WT031",
+      "WT034"
+    ],
+    "incompatible_with": [
+      "WT017",
+      "WT035"
+    ],
+    "base_price_per_unit": 99
+  },
+  {
+    "id": "WT023",
+    "name": "Copper Slag Type 2",
+    "tags": [
+      "slag",
+      "metal",
+      "solid",
+      "abrasive",
+      "variant_2"
+    ],
+    "hazard_class": 3,
+    "unit": "kg",
+    "typical_volume": 3261,
+    "compatible_with": [
+      "WT038",
+      "WT004",
+      "WT001"
+    ],
+    "incompatible_with": [
+      "WT047",
+      "WT034"
+    ],
+    "base_price_per_unit": 12
+  },
+  {
+    "id": "WT024",
+    "name": "Acid Effluent Type 2",
+    "tags": [
+      "acid",
+      "liquid",
+      "corrosive",
+      "effluent",
+      "variant_2"
+    ],
+    "hazard_class": 2,
+    "unit": "litres",
+    "typical_volume": 2743,
+    "compatible_with": [
+      "WT003",
+      "WT005",
+      "WT025"
+    ],
+    "incompatible_with": [
+      "WT006",
+      "WT012"
+    ],
+    "base_price_per_unit": 67
+  },
+  {
+    "id": "WT025",
+    "name": "Bagasse Type 2",
+    "tags": [
+      "organic",
+      "biomass",
+      "solid",
+      "agriculture",
+      "variant_2"
+    ],
+    "hazard_class": 2,
+    "unit": "kg",
+    "typical_volume": 2513,
+    "compatible_with": [
+      "WT046",
+      "WT032",
+      "WT033"
+    ],
+    "incompatible_with": [
+      "WT044",
+      "WT003"
+    ],
+    "base_price_per_unit": 78
+  },
+  {
+    "id": "WT026",
+    "name": "Plastic Granules Type 2",
+    "tags": [
+      "plastic",
+      "polymer",
+      "solid",
+      "recyclable",
+      "variant_2"
+    ],
+    "hazard_class": 4,
+    "unit": "kg",
+    "typical_volume": 5138,
+    "compatible_with": [
+      "WT040",
+      "WT050"
+    ],
+    "incompatible_with": [
+      "WT025",
+      "WT016"
+    ],
+    "base_price_per_unit": 49
+  },
+  {
+    "id": "WT027",
+    "name": "Aluminium Dross Type 2",
+    "tags": [
+      "aluminium",
+      "metal",
+      "dross",
+      "solid",
+      "variant_2"
+    ],
+    "hazard_class": 2,
+    "unit": "kg",
+    "typical_volume": 6890,
+    "compatible_with": [
+      "WT028",
+      "WT030",
+      "WT035"
+    ],
+    "incompatible_with": [
+      "WT037"
+    ],
+    "base_price_per_unit": 38
+  },
+  {
+    "id": "WT028",
+    "name": "Cotton Waste Type 2",
+    "tags": [
+      "textile",
+      "organic",
+      "solid",
+      "combustible",
+      "variant_2"
+    ],
+    "hazard_class": 4,
+    "unit": "kg",
+    "typical_volume": 7331,
+    "compatible_with": [
+      "WT032",
+      "WT017",
+      "WT026"
+    ],
+    "incompatible_with": [
+      "WT007"
+    ],
+    "base_price_per_unit": 6
+  },
+  {
+    "id": "WT029",
+    "name": "Chemical Sludge Type 2",
+    "tags": [
+      "sludge",
+      "chemical",
+      "semi-solid",
+      "toxic",
+      "variant_2"
+    ],
+    "hazard_class": 4,
+    "unit": "kg",
+    "typical_volume": 2418,
+    "compatible_with": [
+      "WT031",
+      "WT038",
+      "WT039"
+    ],
+    "incompatible_with": [
+      "WT045",
+      "WT049"
+    ],
+    "base_price_per_unit": 95
+  },
+  {
+    "id": "WT030",
+    "name": "Waste Oil Type 2",
+    "tags": [
+      "oil",
+      "liquid",
+      "hydrocarbon",
+      "lubricant",
+      "variant_2"
+    ],
+    "hazard_class": 1,
+    "unit": "litres",
+    "typical_volume": 6368,
+    "compatible_with": [
+      "WT044",
+      "WT048",
+      "WT017"
+    ],
+    "incompatible_with": [
+      "WT011",
+      "WT014"
+    ],
+    "base_price_per_unit": 90
+  },
+  {
+    "id": "WT031",
+    "name": "Iron Scrap Type 2",
+    "tags": [
+      "iron",
+      "metal",
+      "solid",
+      "scrap",
+      "variant_2"
+    ],
+    "hazard_class": 2,
+    "unit": "kg",
+    "typical_volume": 6877,
+    "compatible_with": [
+      "WT049",
+      "WT035",
+      "WT026"
+    ],
+    "incompatible_with": [
+      "WT033",
+      "WT021"
+    ],
+    "base_price_per_unit": 100
+  },
+  {
+    "id": "WT032",
+    "name": "Glass Cullet Type 2",
+    "tags": [
+      "glass",
+      "solid",
+      "silica",
+      "recyclable",
+      "variant_2"
+    ],
+    "hazard_class": 1,
+    "unit": "kg",
+    "typical_volume": 8610,
+    "compatible_with": [
+      "WT018",
+      "WT028",
+      "WT025"
+    ],
+    "incompatible_with": [],
+    "base_price_per_unit": 75
+  },
+  {
+    "id": "WT033",
+    "name": "Paper Sludge Type 2",
+    "tags": [
+      "paper",
+      "sludge",
+      "organic",
+      "semi-solid",
+      "variant_2"
+    ],
+    "hazard_class": 4,
+    "unit": "kg",
+    "typical_volume": 782,
+    "compatible_with": [
+      "WT020",
+      "WT046",
+      "WT013"
+    ],
+    "incompatible_with": [
+      "WT011"
+    ],
+    "base_price_per_unit": 39
+  },
+  {
+    "id": "WT034",
+    "name": "Rubber Crumb Type 2",
+    "tags": [
+      "rubber",
+      "solid",
+      "polymer",
+      "tyre",
+      "variant_2"
+    ],
+    "hazard_class": 3,
+    "unit": "kg",
+    "typical_volume": 1525,
+    "compatible_with": [
+      "WT025",
+      "WT038"
+    ],
+    "incompatible_with": [
+      "WT011",
+      "WT024"
+    ],
+    "base_price_per_unit": 16
+  },
+  {
+    "id": "WT035",
+    "name": "Wood Chips Type 2",
+    "tags": [
+      "wood",
+      "organic",
+      "solid",
+      "biomass",
+      "variant_2"
+    ],
+    "hazard_class": 2,
+    "unit": "kg",
+    "typical_volume": 3577,
+    "compatible_with": [
+      "WT046",
+      "WT036",
+      "WT026"
+    ],
+    "incompatible_with": [
+      "WT032",
+      "WT038"
+    ],
+    "base_price_per_unit": 6
+  },
+  {
+    "id": "WT036",
+    "name": "Steel Turnings Type 2",
+    "tags": [
+      "steel",
+      "metal",
+      "solid",
+      "scrap",
+      "variant_2"
+    ],
+    "hazard_class": 4,
+    "unit": "kg",
+    "typical_volume": 1465,
+    "compatible_with": [
+      "WT005",
+      "WT039",
+      "WT042"
+    ],
+    "incompatible_with": [
+      "WT038",
+      "WT043"
+    ],
+    "base_price_per_unit": 30
+  },
+  {
+    "id": "WT037",
+    "name": "Battery Waste Type 2",
+    "tags": [
+      "lead",
+      "acid",
+      "toxic",
+      "solid",
+      "variant_2"
+    ],
+    "hazard_class": 2,
+    "unit": "kg",
+    "typical_volume": 6604,
+    "compatible_with": [
+      "WT006",
+      "WT034",
+      "WT028"
+    ],
+    "incompatible_with": [
+      "WT003",
+      "WT005"
+    ],
+    "base_price_per_unit": 98
+  },
+  {
+    "id": "WT038",
+    "name": "E-Waste Type 2",
+    "tags": [
+      "electronic",
+      "metal",
+      "plastic",
+      "solid",
+      "variant_2"
+    ],
+    "hazard_class": 3,
+    "unit": "kg",
+    "typical_volume": 7023,
+    "compatible_with": [
+      "WT018",
+      "WT050",
+      "WT022"
+    ],
+    "incompatible_with": [
+      "WT011",
+      "WT035"
+    ],
+    "base_price_per_unit": 74
+  },
+  {
+    "id": "WT039",
+    "name": "Phosphogypsum Type 2",
+    "tags": [
+      "gypsum",
+      "chemical",
+      "solid",
+      "acidic",
+      "variant_2"
+    ],
+    "hazard_class": 4,
+    "unit": "kg",
+    "typical_volume": 6922,
+    "compatible_with": [
+      "WT026",
+      "WT022",
+      "WT050"
+    ],
+    "incompatible_with": [
+      "WT032"
+    ],
+    "base_price_per_unit": 51
+  },
+  {
+    "id": "WT040",
+    "name": "Ceramic Waste Type 2",
+    "tags": [
+      "ceramic",
+      "solid",
+      "inert",
+      "construction",
+      "variant_2"
+    ],
+    "hazard_class": 2,
+    "unit": "kg",
+    "typical_volume": 2819,
+    "compatible_with": [
+      "WT010",
+      "WT023",
+      "WT027"
+    ],
+    "incompatible_with": [
+      "WT037",
+      "WT007"
+    ],
+    "base_price_per_unit": 60
+  },
+  {
+    "id": "WT041",
+    "name": "Spent Solvent Type 3",
+    "tags": [
+      "solvent",
+      "chemical",
+      "liquid",
+      "flammable",
+      "variant_3"
+    ],
+    "hazard_class": 1,
+    "unit": "litres",
+    "typical_volume": 3792,
+    "compatible_with": [
+      "WT033",
+      "WT022",
+      "WT024"
+    ],
+    "incompatible_with": [
+      "WT005",
+      "WT048"
+    ],
+    "base_price_per_unit": 93
+  },
+  {
+    "id": "WT042",
+    "name": "Fly Ash Type 3",
+    "tags": [
+      "ash",
+      "solid",
+      "particulate",
+      "construction",
+      "variant_3"
+    ],
+    "hazard_class": 4,
+    "unit": "kg",
+    "typical_volume": 3818,
+    "compatible_with": [
+      "WT008",
+      "WT002"
+    ],
+    "incompatible_with": [
+      "WT011",
+      "WT034"
+    ],
+    "base_price_per_unit": 17
+  },
+  {
+    "id": "WT043",
+    "name": "Copper Slag Type 3",
+    "tags": [
+      "slag",
+      "metal",
+      "solid",
+      "abrasive",
+      "variant_3"
+    ],
+    "hazard_class": 1,
+    "unit": "kg",
+    "typical_volume": 971,
+    "compatible_with": [
+      "WT031",
+      "WT013",
+      "WT010"
+    ],
+    "incompatible_with": [
+      "WT007",
+      "WT038"
+    ],
+    "base_price_per_unit": 57
+  },
+  {
+    "id": "WT044",
+    "name": "Acid Effluent Type 3",
+    "tags": [
+      "acid",
+      "liquid",
+      "corrosive",
+      "effluent",
+      "variant_3"
+    ],
+    "hazard_class": 1,
+    "unit": "litres",
+    "typical_volume": 1837,
+    "compatible_with": [
+      "WT040",
+      "WT048",
+      "WT047"
+    ],
+    "incompatible_with": [
+      "WT046"
+    ],
+    "base_price_per_unit": 36
+  },
+  {
+    "id": "WT045",
+    "name": "Bagasse Type 3",
+    "tags": [
+      "organic",
+      "biomass",
+      "solid",
+      "agriculture",
+      "variant_3"
+    ],
+    "hazard_class": 1,
+    "unit": "kg",
+    "typical_volume": 815,
+    "compatible_with": [
+      "WT033",
+      "WT030",
+      "WT037"
+    ],
+    "incompatible_with": [
+      "WT012",
+      "WT026"
+    ],
+    "base_price_per_unit": 26
+  },
+  {
+    "id": "WT046",
+    "name": "Plastic Granules Type 3",
+    "tags": [
+      "plastic",
+      "polymer",
+      "solid",
+      "recyclable",
+      "variant_3"
+    ],
+    "hazard_class": 3,
+    "unit": "kg",
+    "typical_volume": 693,
+    "compatible_with": [
+      "WT015",
+      "WT049"
+    ],
+    "incompatible_with": [
+      "WT011",
+      "WT027"
+    ],
+    "base_price_per_unit": 52
+  },
+  {
+    "id": "WT047",
+    "name": "Aluminium Dross Type 3",
+    "tags": [
+      "aluminium",
+      "metal",
+      "dross",
+      "solid",
+      "variant_3"
+    ],
+    "hazard_class": 4,
+    "unit": "kg",
+    "typical_volume": 2492,
+    "compatible_with": [
+      "WT044",
+      "WT011",
+      "WT005"
+    ],
+    "incompatible_with": [
+      "WT001",
+      "WT033"
+    ],
+    "base_price_per_unit": 59
+  },
+  {
+    "id": "WT048",
+    "name": "Cotton Waste Type 3",
+    "tags": [
+      "textile",
+      "organic",
+      "solid",
+      "combustible",
+      "variant_3"
+    ],
+    "hazard_class": 3,
+    "unit": "kg",
+    "typical_volume": 3584,
+    "compatible_with": [
+      "WT040",
+      "WT029",
+      "WT006"
+    ],
+    "incompatible_with": [
+      "WT042"
+    ],
+    "base_price_per_unit": 97
+  },
+  {
+    "id": "WT049",
+    "name": "Chemical Sludge Type 3",
+    "tags": [
+      "sludge",
+      "chemical",
+      "semi-solid",
+      "toxic",
+      "variant_3"
+    ],
+    "hazard_class": 3,
+    "unit": "kg",
+    "typical_volume": 6315,
+    "compatible_with": [
+      "WT027",
+      "WT001",
+      "WT011"
+    ],
+    "incompatible_with": [
+      "WT031",
+      "WT038"
+    ],
+    "base_price_per_unit": 62
+  },
+  {
+    "id": "WT050",
+    "name": "Waste Oil Type 3",
+    "tags": [
+      "oil",
+      "liquid",
+      "hydrocarbon",
+      "lubricant",
+      "variant_3"
+    ],
+    "hazard_class": 4,
+    "unit": "litres",
+    "typical_volume": 6814,
+    "compatible_with": [
+      "WT028",
+      "WT019",
+      "WT037"
+    ],
+    "incompatible_with": [
+      "WT003",
+      "WT033"
+    ],
+    "base_price_per_unit": 46
+  }
+]
