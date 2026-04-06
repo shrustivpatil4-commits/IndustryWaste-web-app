@@ -90,9 +90,10 @@ npm run dev
 - Government compliance integration
 - Mobile application
 
-## 🤝 Contributing
-Contributions are welcome!
-Feel free to fork the repo and submit a pull request.
+## 🤝 Contributors
+- Apoorva N Mudabagil - https://github.com/ApoorvA-Jet04
+- Shreya C H - https://github.com/shreyach52
+- Jayani lakshmikanth - https://github.com/jayanilk
 
 ## 📄 License
 This project is licensed under the MIT License.
