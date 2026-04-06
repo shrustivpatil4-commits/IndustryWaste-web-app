@@ -86,6 +86,18 @@ export default function Dashboard() {
         
         {/* Left Panel: Matches */}
         <div className="lg:col-span-1 space-y-4 overflow-y-auto pr-2 custom-scrollbar max-h-[600px]">
+          
+          <div style={{ background:'rgba(251,191,36,0.05)', border:'1px solid rgba(251,191,36,0.2)', borderRadius:12, padding:'16px 20px', marginBottom:24 }}>
+            <div style={{ fontSize:12, color:'#fbbf24', fontWeight:700, marginBottom:10, letterSpacing:1 }}>⏳ PENDING VERIFICATION</div>
+            <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center' }}>
+              <div>
+                <div style={{ fontWeight:700 }}>Metal Shavings → Rajasthan Cement Corp</div>
+                <div style={{ fontSize:12, color:'#64748b', marginTop:2 }}>Inspector assigned · Code: WXINSP4F2A · Awaiting on-site check</div>
+              </div>
+              <span style={{ background:'rgba(251,191,36,0.1)', color:'#fbbf24', border:'1px solid rgba(251,191,36,0.3)', borderRadius:6, padding:'4px 12px', fontSize:11, fontWeight:700 }}>PENDING</span>
+            </div>
+          </div>
+
           <h3 className="font-sans font-bold text-lg mb-4 text-muted-foreground">Active Deals</h3>
           {matches.map((m, idx) => (
             <motion.div key={m.id} initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: idx*0.1 }}>

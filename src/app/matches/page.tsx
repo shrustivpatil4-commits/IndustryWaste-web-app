@@ -57,13 +57,19 @@ export default function MatchesPage() {
     setConfirmingFactory(match.factory_id);
     
     // Simulate API delay
-    await new Promise(r => setTimeout(r, 1500));
+    await new Promise(r => setTimeout(r, 500));
     
-    setDealSuccess({
-      ...match,
-      waste_type: wasteContext.name,
-      volume: wasteContext.volume_offered
-    });
+    const dealId = 'WX' + Date.now().toString(36).toUpperCase()
+    sessionStorage.setItem('currentDealId', dealId)
+    sessionStorage.setItem('confirmedMatch', JSON.stringify({
+      wasteA: { wasteType: wasteContext.name, quantityKg: wasteContext.volume_offered },
+      factoryA: { name: 'Your Factory', city: 'Producer City' },
+      factoryB: { name: match.factory_name, city: match.city },
+      symbiosisScore: match.symbiosis_score,
+      co2SavedKg: match.co2_saved_kg,
+      inrValue: match.carbon_credit_inr
+    }))
+    router.push(`/verify/${dealId}`)
   };
 
   const downloadCertificate = async () => {
