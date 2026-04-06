@@ -10,6 +10,7 @@ export default function Navbar() {
   const navLinks = [
     { href: '/', label: 'Home' },
     { href: '/list-waste', label: 'List Waste' },
+    { href: '/scan', label: '📸 Scan' },
     { href: '/dashboard', label: 'Dashboard' },
     { href: '/analytics', label: 'Analytics' },
   ];
