@@ -13,6 +13,8 @@ export default function Navbar() {
     { href: '/scan', label: '📸 Scan' },
     { href: '/dashboard', label: 'Dashboard' },
     { href: '/analytics', label: 'Analytics' },
+    { href: '/immune', label: '🧬 Immune' },
+    { href: '/leaderboard', label: '🏆 Leaderboard' },
   ];
 
   return (

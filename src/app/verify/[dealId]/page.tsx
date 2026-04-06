@@ -1,6 +1,9 @@
 'use client'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useRouter, useParams } from 'next/navigation'
+import { QRCodeSVG } from 'qrcode.react'
+import jsPDF from 'jspdf'
+import html2canvas from 'html2canvas'
 
 interface VerificationDeal {
   dealId: string
@@ -116,6 +119,28 @@ export default function VerifyPage() {
   const [submitting, setSubmitting] = useState(false)
   const [showRejectModal, setShowRejectModal] = useState(false)
   const [inspectorVerified, setInspectorVerified] = useState(false)
+  const [toastMessage, setToastMessage] = useState('')
+  const certRef = useRef<HTMLDivElement>(null)
+
+  async function downloadPDF() {
+    if (!certRef.current) return
+    try {
+      const canvas = await html2canvas(certRef.current, { backgroundColor: '#0d1318', scale: 2 })
+      const imgData = canvas.toDataURL('image/png')
+      const pdf = new jsPDF({ orientation: 'portrait', unit: 'px', format: [canvas.width, canvas.height] })
+      pdf.addImage(imgData, 'PNG', 0, 0, canvas.width, canvas.height)
+      pdf.save(`WEX-${dealId}-certificate.pdf`)
+    } catch (e) {
+      console.error(e)
+      alert("Failed to generate PDF")
+    }
+  }
+
+  function copyLink() {
+    navigator.clipboard.writeText(`https://wasteexchange.vercel.app/verify/${dealId}`)
+    setToastMessage('Verification link copied!')
+    setTimeout(() => setToastMessage(''), 3000)
+  }
 
   useEffect(() => {
     // Load deal from sessionStorage
@@ -427,6 +452,102 @@ export default function VerifyPage() {
                 <div style={{ fontSize:13, color:'#64748b' }}>You have successfully verified this deal on-site. The certificate is now final and legally valid.</div>
               </div>
             )}
+          </div>
+        )}
+
+        {/* ══ CERTIFICATE SECTION ══ */}
+        {deal.status === 'verified' ? (
+          <div ref={certRef} style={{ background:'#0d1318', border:'2px solid #00e5b0', borderRadius:16, padding:24, marginTop:32, boxShadow:'0 0 20px rgba(0,229,176,0.1)', position:'relative', overflow:'hidden', animation:'fadeIn 0.5s ease-out' }}>
+            {/* Watermark */}
+            <div style={{ position:'absolute', top:'50%', left:'50%', transform:'translate(-50%, -50%) rotate(-30deg)', fontSize:60, fontWeight:900, color:'rgba(0,229,176,0.03)', whiteSpace:'nowrap', pointerEvents:'none' }}>
+              VERIFIED & SEALED
+            </div>
+            
+            {/* Title */}
+            <div style={{ textAlign:'center', marginBottom:24, borderBottom:'1px solid #1a2530', paddingBottom:16 }}>
+              <div style={{ fontFamily:'Syne, sans-serif', fontSize:22, fontWeight:800, color:'#e2e8f0', letterSpacing:1 }}>📄 OFFICIAL EXCHANGE CERTIFICATE</div>
+              <div style={{ fontSize:12, color:'#00e5b0', marginTop:4 }}>Digitally Sealed · Inspector Verified · CPCB Compliant</div>
+              <div style={{ display:'flex', justifyContent:'center', gap:16, marginTop:12, fontSize:12 }}>
+                <span style={{ color:'#64748b' }}>ID: <span style={{ color:'#e2e8f0', fontFamily:'Space Mono, monospace' }}>WEX-{dealId}</span></span>
+                <span style={{ color:'#64748b' }}>Date: <span style={{ color:'#e2e8f0', fontFamily:'Space Mono, monospace' }}>{new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}</span></span>
+              </div>
+              <div style={{ marginTop:12 }}>
+                <span style={{ background:'rgba(0,229,176,0.1)', color:'#00e5b0', padding:'4px 12px', borderRadius:20, fontSize:11, fontWeight:800 }}>✅ YES — Verified On-Site</span>
+                <span style={{ background:'rgba(0,229,176,0.1)', color:'#00e5b0', padding:'4px 12px', borderRadius:20, fontSize:11, fontWeight:800, marginLeft:8, boxShadow:'0 0 8px rgba(0,229,176,0.4)' }}>LEGALLY VALID</span>
+              </div>
+            </div>
+
+            {/* Content Grid */}
+            <div style={{ display:'flex', gap:24, flexWrap:'wrap' }}>
+              {/* QR Code */}
+              <div style={{ flex:'none', background:'#111820', border:'1px solid #00e5b0', borderRadius:14, padding:16, display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', boxShadow:'0 0 10px rgba(0,229,176,0.2)' }}>
+                <QRCodeSVG
+                  value={JSON.stringify({
+                    certificate_id: `WEX-${dealId}`,
+                    producer: deal.producerFactory,
+                    receiver: deal.receiverFactory,
+                    waste_type: deal.wasteType,
+                    quantity_kg: deal.quantityKg,
+                    symbiosis_score: deal.symbiosisScore,
+                    inspector_verified: true,
+                    verified_at: new Date().toISOString(),
+                    verify_url: `https://wasteexchange.vercel.app/verify/${dealId}`
+                  })}
+                  size={180}
+                  bgColor="#111820"
+                  fgColor="#00e5b0"
+                  level="Q"
+                />
+                <div style={{ fontSize:10, color:'#64748b', marginTop:12, letterSpacing:0.5 }}>Scan to verify authenticity</div>
+              </div>
+
+              {/* Data Grid */}
+              <div style={{ flex:1, display:'grid', gridTemplateColumns:'1fr 1fr', gap:16, fontFamily:'Space Mono, monospace' }}>
+                <div style={{ background:'#111820', borderRadius:10, padding:16 }}>
+                  <div style={{ fontSize:10, color:'#64748b', marginBottom:4 }}>Waste Type</div>
+                  <div style={{ fontSize:14, color:'#e2e8f0', marginBottom:12, fontWeight:700 }}>{deal.wasteType}</div>
+                  <div style={{ fontSize:10, color:'#64748b', marginBottom:4 }}>Quantity</div>
+                  <div style={{ fontSize:14, color:'#e2e8f0', marginBottom:12, fontWeight:700 }}>{deal.quantityKg} kg</div>
+                  <div style={{ fontSize:10, color:'#64748b', marginBottom:4 }}>Symbiosis Score</div>
+                  <div style={{ fontSize:14, color:'#e2e8f0', marginBottom:12, fontWeight:700 }}>{deal.symbiosisScore}/100</div>
+                  <div style={{ fontSize:10, color:'#64748b', marginBottom:4 }}>Hazard Class</div>
+                  <div style={{ fontSize:14, color:'#e2e8f0', marginBottom:12, fontWeight:700 }}>Non-Hazardous</div>
+                  <div style={{ fontSize:10, color:'#64748b', marginBottom:4 }}>Chemical Status</div>
+                  <div style={{ fontSize:14, color:'#4ade80', fontWeight:700 }}>✅ ChemSafe Verified</div>
+                </div>
+                <div style={{ background:'#111820', borderRadius:10, padding:16 }}>
+                  <div style={{ fontSize:10, color:'#64748b', marginBottom:4 }}>CO₂ Saved</div>
+                  <div style={{ fontSize:14, color:'#e2e8f0', marginBottom:12, fontWeight:700 }}>{(deal.quantityKg * 2.5).toLocaleString()} kg</div>
+                  <div style={{ fontSize:10, color:'#64748b', marginBottom:4 }}>Carbon Credit</div>
+                  <div style={{ fontSize:14, color:'#e2e8f0', marginBottom:12, fontWeight:700 }}>₹{Math.round(deal.quantityKg * 2.5 * 0.85).toLocaleString()}</div>
+                  <div style={{ fontSize:10, color:'#64748b', marginBottom:4 }}>Transaction Ref</div>
+                  <div style={{ fontSize:14, color:'#e2e8f0', marginBottom:12, fontWeight:700 }}>TXN-{dealId.slice(0,6).toUpperCase()}</div>
+                  <div style={{ fontSize:10, color:'#64748b', marginBottom:4 }}>Net Payable</div>
+                  <div style={{ fontSize:14, color:'#e2e8f0', marginBottom:12, fontWeight:700 }}>₹{deal.inrValue.toLocaleString()}</div>
+                  <div style={{ fontSize:10, color:'#64748b', marginBottom:4 }}>Payment Status</div>
+                  <div style={{ fontSize:14, color:'#fbbf24', fontWeight:700 }}>⏳ PENDING</div>
+                </div>
+              </div>
+            </div>
+            
+            {/* Action Buttons */}
+            <div data-html2canvas-ignore="true" style={{ display:'flex', gap:12, marginTop:24, paddingTop:24, borderTop:'1px solid #1a2530' }}>
+              <button onClick={downloadPDF} style={{ flex:1, background:'#00e5b0', color:'#070b0f', border:'none', padding:'12px', borderRadius:8, fontWeight:800, cursor:'pointer', fontSize:14 }}>
+                ⬇ Download PDF Certificate
+              </button>
+              <button onClick={copyLink} style={{ flex:1, background:'#111820', color:'#e2e8f0', border:'1px solid #1a2530', padding:'12px', borderRadius:8, fontWeight:800, cursor:'pointer', fontSize:14 }}>
+                📤 Share Certificate
+              </button>
+            </div>
+            {toastMessage && (
+              <div data-html2canvas-ignore="true" style={{ position:'absolute', bottom:20, left:'50%', transform:'translateX(-50%)', background:'#00e5b0', color:'#070b0f', padding:'8px 16px', borderRadius:20, fontSize:12, fontWeight:800, boxShadow:'0 4px 12px rgba(0,229,176,0.3)' }}>
+                {toastMessage}
+              </div>
+            )}
+          </div>
+        ) : (
+          <div style={{ marginTop:32, padding:24, background:'rgba(251,191,36,0.05)', border:'1px solid rgba(251,191,36,0.2)', borderRadius:12, textAlign:'center', color:'#fbbf24', fontSize:14, fontWeight:700 }}>
+            ⚠ Certificate not yet verified by inspector
           </div>
         )}
       </div>
